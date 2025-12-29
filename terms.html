@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Harvard FCU - Terms of Service. Read our complete terms and conditions for membership and services.">
+    <meta name="keywords" content="Harvard FCU, Terms of Service, Membership Agreement, Service Terms">
+    <meta name="author" content="Harvard FCU">
+    <meta name="theme-color" content="#5B4BFF">
+    <title>Harvard FCU - Terms of Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-primary {
+            background: linear-gradient(135deg, #5B4BFF 0%, #7B6FFF 100%);
+        }
+        
+        .gradient-secondary {
+            background: linear-gradient(135deg, #EEF0FF 0%, #F5F7FF 100%);
+        }
+        
+        .btn-primary {
+            background-color: #5B4BFF;
+            color: white;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease-out;
+            display: inline-block;
+        }
+        
+        .btn-primary:hover {
+            filter: brightness(1.1);
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(91, 75, 255, 0.3);
+        }
+        
+        .btn-secondary {
+            background-color: #00E5A8;
+            color: #1a1a1a;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease-out;
+            display: inline-block;
+        }
+        
+        .btn-secondary:hover {
+            filter: brightness(1.1);
+            transform: scale(1.05);
+            box-shadow: 0 10px 40px rgba(0, 229, 168, 0.3);
+        }
+        
+        .card-base {
+            background-color: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-out;
+        }
+        
+        .card-base:hover {
+            transform: scale(1.02);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .feature-card {
+            background-color: white;
+            border-radius: 1.5rem;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease-out;
+            text-align: center;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+        
+        .testimonial-card {
+            background-color: white;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease-out;
+        }
+        
+        .testimonial-card:hover {
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+            transform: translateY(-4px);
+        }
+        
+        .faq-item {
+            background-color: white;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease-out;
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #1a1a1a;
+            font-size: 1.125rem;
+            transition: all 0.3s ease-out;
+        }
+        
+        .faq-question:hover {
+            color: #5B4BFF;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease-out;
+            color: #5B4BFF;
+        }
+        
+        .faq-answer {
+            margin-top: 1.5rem;
+            color: #666;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+        
+        .section-title {
+            color: #5B4BFF;
+            font-weight: 600;
+            font-size: 3.75rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            color: #666;
+            font-size: 1.25rem;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(91, 75, 255, 0.1) 0%, rgba(238, 240, 255, 0.5) 100%);
+        }
+        
+        .icon-box {
+            width: 3.5rem;
+            height: 3.5rem;
+            background-color: #EEF0FF;
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            transition: all 0.3s ease-out;
+        }
+        
+        .feature-card:hover .icon-box {
+            background-color: #5B4BFF;
+        }
+        
+        .feature-card:hover .icon-box svg {
+            color: white;
+        }
+        
+        .star-rating {
+            color: #FFD700;
+            letter-spacing: 0.2em;
+        }
+
+        .policy-section {
+            background-color: white;
+            border-radius: 1rem;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .policy-section h2 {
+            color: #5B4BFF;
+            font-size: 1.875rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #EEF0FF;
+        }
+
+        .policy-section h3 {
+            color: #1a1a1a;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .policy-section p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .policy-section ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 1rem;
+        }
+
+        .policy-section ul li {
+            color: #666;
+            line-height: 1.8;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+
+        .policy-section ul li:before {
+            content: "•";
+            color: #5B4BFF;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .table-of-contents {
+            background-color: #F5F7FF;
+            border-left: 4px solid #5B4BFF;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .table-of-contents h3 {
+            color: #5B4BFF;
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .table-of-contents ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .table-of-contents ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .table-of-contents a {
+            color: #5B4BFF;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease-out;
+        }
+
+        .table-of-contents a:hover {
+            color: #7B6FFF;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2.25rem;
+            }
+
+            .policy-section {
+                padding: 1.5rem;
+            }
+
+            .policy-section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <nav class="max-w-7xl mx-auto px-8 md:px-16 py-6 flex items-center justify-between">
+            <div class="flex items-center justify-between w-full">
+                <a href="https://jrfent.github.io/harvard-fcu-2025-12-29-oqh1b" class="flex items-center gap-2">
+                    <div class="w-10 h-10 gradient-primary rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">H</span>
+                    </div>
+                    <span class="text-2xl font-semibold text-gray-900">Harvard FCU</span>
+                </a>
+                <a href="https://jrfent.github.io/harvard-fcu-2025-12-29-oqh1b" class="text-gray-700 font-500 hover:text-blue-600 transition-colors duration-300">
+                    ← Back
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-24 md:py-32 lg:py-40 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-200 to-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 -z-10"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-purple-200 to-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 -z-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="max-w-4xl">
+                <h1 class="section-title text-5xl md:text-6xl lg:text-7xl mb-6">Terms of Service</h1>
+                <p class="section-subtitle text-lg md:text-xl mb-8 max-w-2xl">Please read these terms and conditions carefully before using Harvard FCU services. Your use of our platform constitutes your acceptance of these terms.</p>
+                <p class="text-gray-600 text-lg">Last Updated: December 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="py-12 md:py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-8 md:px-16">
+            <div class="table-of-contents">
+                <h3>Quick Navigation</h3>
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#user-agreements">User Agreements</a></li>
+                    <li><a href="#acceptable-use">Acceptable Use Policy</a></li>
+                    <li><a href="#limitation-liability">Limitation of Liability</a></li>
+                    <li><a href="#contact">Contact Information</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="py-12 md:py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-8 md:px-16">
+            <div class="policy-section">
+                <h2>1. Introduction</h2>
+                <p>Welcome to Harvard Federal Credit Union ("Harvard FCU," "we," "us," "our," or "Company"). These Terms of Service ("Terms") govern your access to and use of our website, mobile application, and all related services (collectively, the "Services"). By accessing or using Harvard FCU's Services, you agree to be bound by these Terms. If you do not agree to all of the terms and conditions contained herein, you may not use the Services.</p>
+                
+                <h3>1.1 Service Description</h3>
+                <p>Harvard FCU is a member-owned financial institution providing a comprehensive range of financial services including savings accounts, checking accounts, loans, investment services, and related financial products and services to our members. Our Services are designed to provide convenient, secure, and efficient financial management solutions.</p>
+                
+                <h3>1.2 Eligibility</h3>
+                <p>To use our Services, you must be at least 18 years old and meet our membership eligibility requirements. By using our Services, you represent and warrant that you meet these eligibility requirements and that all information you provide is accurate, complete, and truthful. If you are under 18 years old, you may only use the Services with the consent and supervision of a parent or legal guardian.</p>
+                
+                <h3>1.3 Modifications to Terms</h3>
+                <p>Harvard FCU reserves the right to modify these Terms at any time. Changes will be effective immediately upon posting to our website or notifying you via email. Your continued use of the Services following the posting of revised Terms means that you accept and agree to the changes. We encourage you to review these Terms periodically to stay informed of any updates.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Agreements Section -->
+    <section id="user-agreements" class="py-12 md:py-20 bg-gradient-secondary">
+        <div class="max-w-4xl mx-auto px-8 md:px-16">
+            <div class="policy-section">
+                <h2>2. User Agreements</h2>
+                <p>By using Harvard FCU's Services, you enter into a binding agreement with us. This section outlines the key terms and conditions that govern your use of our Services and your relationship with Harvard FCU.</p>
+                
+                <h3>2.1 Account Creation and Maintenance</h3>
+                <p>To access certain Services, you must create an account with Harvard FCU. You agree to:</p>
+                <ul>
+                    <li>Provide accurate, current, and complete information during the registration process</li>
+                    <li>Maintain the confidentiality of your account credentials, including username and password</li>
+                    <li>Immediately notify Harvard FCU of any unauthorized use of your account</li>
+                    <li>Be responsible for all activities that occur under your account</li>
+                    <li>Update your account information to maintain accuracy</li>
+                </ul>
+                
+                <h3>2.2 Member Responsibilities</h3>
+                <p>As a member of Harvard FCU, you agree to:</p>
+                <ul>
+                    <li>Comply with all applicable federal, state, and local laws and regulations</li>
+                    <li>Maintain sufficient funds in your account to cover transactions</li>
+                    <li>Report any discrepancies or unauthorized transactions within the timeframe specified in our account agreements</li>
+                    <li>Pay all fees and charges associated with your accounts and services</li>
+                    <li>Notify us promptly of any changes to your personal information</li>
+                </ul>
+                
+                <h3>2.3 Account Termination</h3>
+                <p>Harvard FCU reserves the right to suspend or terminate your account and access to the Services at any time, for any reason, with or without notice. Reasons for termination may include, but are not limited to: violation of these Terms, fraudulent activity, non-compliance with member agreements, or at our sole discretion. Upon termination, you remain responsible for any outstanding obligations to Harvard FCU.</p>
+                
+                <h3>2.4 Intellectual Property Rights</h3>
+                <p>All content, materials, and services provided through Harvard FCU's Services, including but not limited to text, graphics, logos, images, and software, are the property of Harvard FCU or our licensors and are protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, transmit, display, or create derivative works of any content without prior written permission from Harvard FCU.</p>
+                
+                <h3>2.5 Third-Party Services and Links</h3>
+                <p>Our Services may contain links to third-party websites and services. Harvard FCU is not responsible for the content, accuracy, or practices of these third-party services. Your use of third-party services is governed by their terms and conditions, and you acknowledge that Harvard FCU has no control over these external services. We encourage you to review the terms and privacy policies of any third-party services before using them.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acceptable Use Section -->
+    <section id="acceptable-use" class="py-12 md:py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-8 md:px-16">
+            <div class="policy-section">
+                <h2>3. Acceptable Use Policy</h2>
+                <p>You agree not to use Harvard FCU's Services in any manner that violates applicable laws, regulations, or these Terms. Specifically, you agree not to:</p>
+                
+                <h3>3.1 Prohibited Activities</h3>
+                <ul>
+                    <li>Engage in any fraudulent, deceptive, or illegal activity</li>
+                    <li>Attempt to gain unauthorized access to our systems or networks</li>
+                    <li>Use the Services to transmit viruses, malware, or any code of destructive nature</li>
+                    <li>Harass, threaten, defame, or abuse other users or Harvard FCU staff</li>
+                    <li>Attempt to reverse engineer, decompile, or disassemble any part of our Services</li>
+                    <li>Use the Services for any unlawful purpose or in violation of any applicable laws</li>
+                    <li>Engage in money laundering, terrorist financing, or sanctions violations</li>
+                    <li>Attempt to manipulate or interfere with the normal operation of our Services</li>
+                    <li>Use automated tools or bots to access our Services without authorization</li>
+                    <li>Share your account credentials with third parties or allow unauthorized access</li>
+                </ul>
+                
+                <h3>3.2 Security Obligations</h3>
+                <p>You are responsible for maintaining the security of your account credentials. Harvard FCU will never ask you to provide your password or sensitive information via email or phone. If you receive such a request, it may be a phishing attempt. You should immediately report any suspicious activity or communications to Harvard FCU.</p>
+                
+                <h3>3.3 Compliance with Laws</h3>
+                <p>You agree to comply with all applicable federal, state, and local laws, regulations, and rules. Harvard FCU reserves the right to cooperate with law enforcement agencies and regulatory authorities. If we have reason to believe you are engaged in illegal activity, we may report such activity to appropriate authorities and suspend your account pending investigation.</p>
+                
+                <h3>3.4 Monitoring and Enforcement</h3>
+                <p>Harvard FCU reserves the right to monitor your use of the Services to ensure compliance with these Terms and applicable laws. We may investigate any suspected violations and take appropriate action, including suspension or termination of your account, without prior notice. We may also cooperate with law enforcement in investigating potential criminal activity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Limitation of Liability Section -->
+    <section id="limitation-liability" class="py-12 md:py-20 bg-gradient-secondary">
+        <div class="max-w-4xl mx-auto px-8 md:px-16">
+            <div class="policy-section">
+                <h2>4. Limitation of Liability</h2>
+                <p>To the fullest extent permitted by applicable law, Harvard FCU and its officers, directors, employees, and agents shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the Services, even if we have been advised of the possibility of such damages.</p>
+                
+                <h3>4.1 Disclaimer of Warranties</h3>
+                <p>The Services are provided on an "as-is" and "as-available" basis. Harvard FCU makes no warranties, express or implied, regarding the Services, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not warrant that the Services will be uninterrupted, error-free, or secure.</p>
+                
+                <h3>4.2 Limitation on Liability</h3>
+                <p>Except as required by law, Harvard FCU's total liability to you for any claims arising from or related to these Terms or the Services shall not exceed the amount of fees paid by you to Harvard FCU in the twelve months preceding the claim. Some jurisdictions do not allow the limitation of liability, so this limitation may not apply to you.</p>
+                
+                <h3>4.3 Indemnification</h3>
+                <p>You agree to indemnify, defend, and hold harmless Harvard FCU and its officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses (including reasonable attorneys' fees) arising from or related to your use of the Services, your violation of these Terms, or your violation of any applicable laws or regulations.</p>
+                
+                <h3>4.4 Service Interruptions</h3>
+                <p>Harvard FCU is not responsible for any interruptions, delays, or failures in the Services, including those caused by system maintenance, upgrades, or circumstances beyond our control. We will make reasonable efforts to notify you of scheduled maintenance, but we do not guarantee uninterrupted access to the Services.</p>
+                
+                <h3>4.5 Data Loss</h3>
+                <p>While Harvard FCU implements security measures to protect your data, we cannot guarantee the absolute security of your information. You acknowledge the inherent risks associated with digital communications and agree that Harvard FCU is not liable for any unauthorized access to or loss of your data, except as required by applicable law.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section id="contact" class="py-12 md:py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-8 md:px-16">
+            <div class="policy-section">
+                <h2>5. Contact Information & Support</h2>
+                <p>If you have questions about these Terms of Service or need assistance with your Harvard FCU account, please contact us through the following channels:</p>
+                
+                <h3>5.1 Email Support</h3>
+                <p>For general inquiries and non-urgent matters, you can reach our support team via email:</p>
+                <p><strong>Email:</strong> <a href="mailto:website@harvard-fcu.org" class="text-blue-600 hover:text-blue-800">website@harvard-fcu.org</a></p>
+                
+                <h3>5.2 Phone Support</h3>
+                <p>Our dedicated customer service team is available 24/7 to assist you with account questions and technical support. Please have your account information ready when you call.</p>
+                <p><strong>Hours:</strong> 24/7 Member Support Available</p>
+                
+                <h3>5.3 Online Account Management</h3>
+                <p>You can manage your accounts, view transactions, and access many services through our secure member portal at <a href="https://harvard-fcu.org" class="text-blue-600 hover:text-blue-800">harvard-fcu.org</a></p>
+                
+                <h3>5.4 Dispute Resolution</h3>
+                <p>If you have a dispute regarding your account or the Services, please contact us in writing with details of your concern. Harvard FCU will investigate and respond within a reasonable timeframe. If you are not satisfied with our response, you may file a complaint with the National Credit Union Administration (NCUA) or your state's regulatory authority.</p>
+                
+                <h3>5.5 Regulatory Compliance</h3>
+                <p>Harvard FCU is a member-owned credit union insured by the National Credit Union Administration (NCUA). We comply with all applicable federal and state banking regulations and are committed to protecting your rights as a member. For additional information about your rights and protections, visit the NCUA website at <a href="https://www.ncua.gov" class="text-blue-600 hover:text-blue-800">www.ncua.gov</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Information Section -->
+    <section class="py-12 md:py-20 bg-gradient-secondary">
+        <div class="max-w-4xl mx-auto px-8 md:px-16">
+            <div class="policy-section">
+                <h2>6. Additional Terms & Conditions</h2>
+                
+                <h3>6.1 Governing Law</h3>
+                <p>These Terms are governed by and construed in accordance with the laws of the United States and the state in which Harvard FCU is chartered, without regard to its conflict of law provisions. You agree to submit to the exclusive jurisdiction of the courts located in that state.</p>
+                
+                <h3>6.2 Entire Agreement</h3>
+                <p>These Terms, together with any other agreements, policies, and documents referenced herein, constitute the entire agreement between you and Harvard FCU regarding the Services and supersede all prior negotiations, representations, and agreements, whether written or oral.</p>
+                
+                <h3>6.3 Severability</h3>
+                <p>If any provision of these Terms is found to be invalid or unenforceable, such provision shall be modified to the minimum extent necessary to make it valid and enforceable, and the remaining provisions shall remain in full force and effect.</p>
+                
+                <h3>6.4 Waiver</h3>
+                <p>The failure of Harvard FCU to enforce any provision of these Terms shall not constitute a waiver of that provision or any other provision. Any waiver of these Terms must be in writing and signed by an authorized representative of Harvard FCU.</p>
+                
+                <h3>6.5 Assignment</h3>
+                <p>You may not assign or transfer your rights or obligations under these Terms without the prior written consent of Harvard FCU. Harvard FCU may assign these Terms to any successor or affiliate without notice to you.</p>
+                
+                <h3>6.6 Notices</h3>
+                <p>Any notices required under these Terms shall be in writing and delivered personally, by email, or by certified mail to the addresses specified by each party. Notices by email shall be effective upon sending, and notices by certified mail shall be effective upon receipt.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 relative overflow-hidden" style="background-image: linear-gradient(rgba(26, 26, 26, 0.75), rgba(26, 26, 26, 0.75)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="max-w-4xl mx-auto px-8 md:px-16 text-center relative z-10">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-6 leading-tight">Ready to Join Harvard FCU?</h2>
+            <p class="text-lg text-gray-200 mb-8 leading-relaxed">By becoming a member, you agree to these Terms of Service and our Member Agreement. Start your journey to better banking today.</p>
+            <a href="https://harvard-fcu.org" class="btn-primary inline-block">Become a Member Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-8 md:px-16">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <!-- Column 1: About -->
+                <div>
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-10 h-10 gradient-primary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">H</span>
+                        </div>
+                        <span class="text-xl font-semibold">Harvard FCU</span>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed text-sm">Your trusted partner in financial success. Member-owned, community-focused, and dedicated to your prosperity.</p>
+                </div>
+                
+                <!-- Column 2: Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="https://jrfent.github.io/harvard-fcu-2025-12-29-oqh1b#features" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Features</a></li>
+                        <li><a href="https://jrfent.github.io/harvard-fcu-2025-12-29-oqh1b#benefits" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Benefits</a></li>
+                        <li><a href="https://jrfent.github.io/harvard-fcu-2025-12-29-oqh1b#testimonials" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Testimonials</a></li>
+                        <li><a href="https://jrfent.github.io/harvard-fcu-2025-12-29-oqh1b#faq" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3: Services -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="https://harvard-fcu.org" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Member Portal</a></li>
+                        <li><a href="https://harvard-fcu.org" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Savings Accounts</a></li>
+                        <li><a href="https://harvard-fcu.org" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Loans & Credit</a></li>
+                        <li><a href="https://harvard-fcu.org" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">Investment Services</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4: Contact -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <a href="mailto:website@harvard-fcu.org" class="text-gray-400 hover:text-white transition-colors duration-300 text-sm">website@harvard-fcu.org</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                            </svg>
+                            <span class="text-gray-400 text-sm">24/7 Member Support Available</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <p class="text-gray-400 text-sm text-center md:text-left">&copy; 2025 Harvard Federal Credit Union. All rights reserved. Member-NCUA. Equal Housing Opportunity.</p>
+                    <div class="flex gap-6">
+                        <a href="https://facebook.com" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="Facebook">
+                            <i class="fab fa-facebook-f text-lg"></i>
+                        </a>
+                        <a href="https://twitter.com" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="Twitter">
+                            <i class="fab fa-twitter text-lg"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                        <a href="https://instagram.com" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="Instagram">
+                            <i class="fab fa-instagram text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
